@@ -8,23 +8,28 @@ import ShopList from './components/shopList';
 import { NativeBaseProvider } from 'native-base';
 import ShopDetail from './components/ShopDetail';
 
+import { NavigationContainer } from "@react-navigation/native";
+import StackNavigator from './components/Navigation';
 
 
 export default function App() {
   return (
     <Provider store={store}>
       <NativeBaseProvider>
-    <View style={styles.container}>
-      <Text> Test from app</Text>
-      {/* <Text>Open up App.js to start working on your app!</Text> */}
 
-     {/* <Home/> */}
+    {/* <View style={styles.container}> */}
+      <NavigationContainer>
+
+        <StackNavigator/>
+
+     {/* <Home/>
      <ShopList/>
-     {/* <ShopDetail/> */}
-
+     <ShopDetail/> */}
+     </NavigationContainer>
+    {/* </View> */}
       <StatusBar style="auto" />
-    </View>
     </NativeBaseProvider>
+
     </Provider>
   );
 }

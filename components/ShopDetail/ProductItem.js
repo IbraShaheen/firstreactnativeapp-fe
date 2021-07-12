@@ -1,16 +1,18 @@
 import { Center } from 'native-base';
 import React from 'react';
 import {StyleSheet, Text, View, Image } from 'react-native';
+import { PRODUCTDETAIL } from '../Navigation/types';
 
 
-const ProductItem = (props) => {
-  const product = props.product;
+const ProductItem = ({product, navigation}) => {
+//    const product = props.product;
+
   return (
     
        <View>
            <Center>
-      <Text>{product.name}</Text>
-      <Text>{product.price} JD</Text>
+      <Text onPress={() => navigation.navigate(PRODUCTDETAIL, {product:product})} >{product.name}</Text>
+      {/* <Text>{product.price} JD</Text> */}
       <Image style={styles.img} source={{uri: product.image}}/>
       </Center>
       </View>

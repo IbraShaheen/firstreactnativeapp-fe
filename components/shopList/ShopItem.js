@@ -1,17 +1,21 @@
 import { Center } from 'native-base';
 import React from 'react';
 import {StyleSheet, Text, View, Image } from 'react-native';
+import { SHOPDETAIL } from '../Navigation/types';
 
 
-const ShopItem = (props) => {
-  const shop = props.shop;
+const ShopItem = ({shop,navigation}) => {
+  // const shop = props.shop;
   return (
     <Center>
 
        <View>
-      <Text style={{textAlign:"center"}}>{shop.name}</Text>
+      <Text
+       onPress={() => {navigation.navigate(SHOPDETAIL,{shop: shop})}}
+      style={{textAlign:"center"}}>{shop.name}</Text>
 
-      <Image style={styles.image} source={{uri:shop.image}}/>
+      <Image  style={styles.image}
+      source={{uri:shop.image}}/>
       </View>
     
     </Center>
