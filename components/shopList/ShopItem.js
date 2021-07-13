@@ -9,10 +9,10 @@ const ShopItem = ({shop,navigation}) => {
   return (
     <Center>
 
-       <View>
+       <View style={{marginTop:10}}>
       <Text
        onPress={() => {navigation.navigate(SHOPDETAIL,{shop: shop})}}
-      style={{textAlign:"center"}}>{shop.name}</Text>
+      style={{textAlign:"center",fontWeight:"bold", fontSize:20, fontFamily:"serif"}}>{shop.name}</Text>
 
       <Image  style={styles.image}
       source={{uri:shop.image}}/>

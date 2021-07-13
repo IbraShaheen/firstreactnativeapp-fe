@@ -14,16 +14,16 @@ const ShopDetail = ({route, navigation}) => {
  const productsFromProductsStore = shop.products ? shop.products.map((product)=> getProductById(product.id, products)) : []
     // const productsFromProductsStore= shop.products.map((product)=>products.find((_product)=>(product.id===_product.id)))
     return (
-        <Center>
-        <View>
+        <View >
+            <Center style={{marginTop:100}}>
 
           <Text style={{fontSize:25}} >{shop.name}</Text>
             <Image  style={styles.image} source={{uri:shop.image}}/>
 
             <ProductList products={productsFromProductsStore} navigation={navigation} />
 
-        </View>
         </Center>
+        </View>
     )
 }
 
