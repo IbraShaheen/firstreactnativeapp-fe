@@ -14,6 +14,7 @@ const ShopList = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
         <Center flex={1}>
+          
           {shopLoading ? <Spinner color="blue" /> : shopList}
         </Center>
       </ScrollView>

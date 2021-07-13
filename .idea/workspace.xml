@@ -6,16 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9db70240-5c9e-469e-b878-78d3fa02d038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/CartButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/CartButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartList/CartItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartList/CartItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ShopDetail/ProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ShopDetail/ProductItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ShopDetail/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ShopDetail/ProductList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ShopDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ShopDetail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shopList/ShopItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/shopList/ShopItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shopList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/shopList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/action/instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/action/instance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/action/cartActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/action/cartActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/action/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/action/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/reducers/cartReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +48,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="220" y="13" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1626090986708" />
-    <state x="155" y="156" width="1200" height="584" key="AVDManager" timestamp="1626123282233">
+    <state x="155" y="156" width="1200" height="584" key="AVDManager" timestamp="1626204840256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="155" y="156" width="1200" height="584" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1626123282233" />
+    <state x="155" y="156" width="1200" height="584" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1626204840256" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1626028002705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

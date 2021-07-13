@@ -1,7 +1,8 @@
 import { ADD_SHOPS, FETCH_SHOPS } from "../action/types";
 
 const initialState = {
-    shops: [], loading:true,
+    shops: [],
+     loading:true,
   };
 
   const shopReducer = (state = initialState, action)=>{

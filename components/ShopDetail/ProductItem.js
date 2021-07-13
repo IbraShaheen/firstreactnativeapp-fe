@@ -1,16 +1,22 @@
 import { Center } from "native-base";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { PRODUCTDETAIL } from "../Navigation/types";
-
 import NumericInput from "react-native-numeric-input";
 import { TouchableOpacity } from "react-native";
+import { addToCart } from "../../store/action/cartActions";
+import { useDispatch } from "react-redux";
+
 
 const ProductItem = ({ product, navigation }) => {
-  //    const product = props.product;
-
   const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch()
+  
 
+  const handleAdd = () => {
+    const newItem = { quantity, productId: product.id }
+    dispatch(addToCart(newItem))
+  };
   return (
     <View>
       <Center>
@@ -34,13 +40,14 @@ const ProductItem = ({ product, navigation }) => {
           valueType="real"
           rounded
           textColor="#B0228C"
+          minValue={1}
           iconStyle={{ color: "white" }}
           rightButtonBackgroundColor="green"
           leftButtonBackgroundColor="red"
         />
 
         <TouchableOpacity
-          onPress={() => alert(quantity)}
+          onPress={handleAdd}
           style={{
             backgroundColor: "#023047",
             marginTop: 5,
