@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { CART_LIST, HOME, PRODUCTDETAIL, SHOPDETAIL, SHOPLIST } from "./types";
+import { CART_LIST, HOME, PRODUCTDETAIL, SHOPDETAIL, SHOPLIST, SIGN_IN, SIGN_UP } from "./types";
 
 import Home from "../home";
 import ShopList from "../shopList";
@@ -8,6 +8,8 @@ import ShopDetail from "../ShopDetail";
 import ProductDetail from "../ShopDetail/ProductDetail";
 import CartList from "../CartList";
 import CartButton from "../Buttons/CartButton";
+import  signin  from "../../components/authentication/Signin";
+import  signup  from "../../components/authentication/Signup";
 
 const StackNavigator = () => {
   const { Navigator, Screen } = createStackNavigator();
@@ -54,6 +56,10 @@ const StackNavigator = () => {
       />
 
       <Screen name={CART_LIST} component={CartList} />
+
+      <Screen name={SIGN_IN} component={signin} />
+
+      <Screen name={SIGN_UP} component={signup} />
     </Navigator>
   );
 };
