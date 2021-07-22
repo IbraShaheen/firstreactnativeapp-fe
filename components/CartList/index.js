@@ -27,7 +27,7 @@ const CartList = () => {
 
       const createButtonAlert = () =>
       Alert.alert(
-        "",
+        "Sign in",
         "please signin before checking out",
         [
           {
@@ -39,7 +39,7 @@ const CartList = () => {
       );
 
       const handleCheckOut=() => {
-        user? dispatch(checkoutCart()) :createButtonAlert();
+        user? dispatch(checkoutCart(items)) :createButtonAlert();
     }
 
     return (

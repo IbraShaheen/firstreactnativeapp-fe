@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9db70240-5c9e-469e-b878-78d3fa02d038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CartList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartList/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +42,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="220" y="13" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1626090986708" />
-    <state x="155" y="156" width="1200" height="584" key="AVDManager" timestamp="1626244955936">
+    <state x="155" y="156" width="1200" height="584" key="AVDManager" timestamp="1626966986099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="155" y="156" width="1200" height="584" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1626244955936" />
+    <state x="155" y="156" width="1200" height="584" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1626966986099" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1626028002705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

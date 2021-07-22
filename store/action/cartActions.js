@@ -12,6 +12,15 @@ export const deleteFromCart = (productId) => ({
   payload: productId,
 });
 
-export const checkoutCart = () => ({
-  type: CHECK_OUT,
-});
+export const checkoutCart = (items) => async(dispatch)=>{
+  // const res = await instance.post("/checkout", items)
+  await instance.post("/checkout", items)
+
+  console.log(items)
+  dispatch({
+    type: CHECK_OUT,
+    payload: [],
+
+  })
+
+};
